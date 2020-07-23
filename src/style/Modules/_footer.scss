@@ -1,0 +1,71 @@
+@import "../varibale";
+.footer {
+  .footer-logo {
+    width: 150px;
+    margin: 15px 0 0 0;
+  }
+  .footer-paragraph {
+    color: $base-light;
+    font-size: 18px;
+  }
+  .inner-list {
+    .footer-heading {
+      font-weight: 600;
+    }
+    padding: 28px 14px;
+    .footer-links {
+      font-size: 14px;
+      font-weight: 300;
+      padding: 3px 0px;
+      cursor: pointer;
+      color: $footer-li-color;
+    }
+  }
+}
+.copy-right {
+  background-color: $base-primary;
+  .d-flex {
+    justify-content: space-between;
+    padding: 5px 0;
+    .copyright-list {
+      margin: 14px 5px;
+      .social-icon {
+        margin: 0 5px;
+        cursor: pointer;
+      }
+    }
+    .copyright-paragraph {
+      color: $white;
+      font-weight: 300;
+      font-size: 14px;
+      margin: 26px 0;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .footer .inner-list .footer-links {
+    font-size: 12px;
+  }
+  .footer .footer-paragraph {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 22px;
+  }
+}
+@media (max-width: 575px) {
+  .copy-right .d-flex {
+    flex-direction: column;
+  }
+  .footer-icon {
+    .d-flex {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  .copyright-2020 {
+    text-align: center;
+  }
+}

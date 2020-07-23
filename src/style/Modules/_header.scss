@@ -1,0 +1,157 @@
+@import "../varibale";
+@mixin boxer-button {
+  color: $white;
+  background-color: transparent;
+  background-image: none;
+  border-color: $white;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+#Header {
+  padding: 45px 0;
+}
+.navbar {
+  z-index: 1000;
+  width: 100%;
+  height: 60px;
+  padding: 18px;
+  background-color: transparent;
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  color: $white;
+  font-size: 15px;
+}
+.navbar-brand {
+  .navbar-img {
+    width: 118px;
+  }
+}
+.nav-item .get-started-button {
+  color: $white;
+  background-color: transparent;
+  background-image: none;
+  border: 1.5px solid $white;
+  width: 160px;
+  border-radius: 0;
+  margin: 0 0 0 6px;
+  text-transform: uppercase;
+}
+.nav-item .get-started-button:hover {
+  background-color: $white;
+  color: $base-primary;
+}
+.boxer-sidemenu {
+  display: none;
+}
+@media (max-width: 991px) {
+  #Header {
+    display: none;
+  }
+  .header-overlay .nav-item .button {
+    color: $white;
+    background-color: $header-button;
+    background-image: none;
+    border-color: $white;
+    margin: 11px 10px;
+  }
+  .navbar-dark .navbar-brand {
+    padding: 5px 18px;
+  }
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1003;
+  top: 0;
+  right: 0;
+  background-color: $white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  .sidebar-img {
+    width: 118px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  }
+  .get-started {
+    @include boxer-button;
+    background-color: $base-secondary;
+    font-weight: 300;
+  }
+}
+.sidebar .sidebar-link {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 12px;
+  color: $sidebar-link-color;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar .sidebar-link:hover {
+  color: $sidebar-link-color;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 8px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: $cross-color;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: $white;
+  border: none;
+  background-color: transparent;
+}
+.sidemenu {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+}
+.close-btn {
+  cursor: pointer;
+  color: $cross-color;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 82px;
+  }
+  .sidebar .sidebar-link {
+    font-size: 12px;
+  }
+}
+
+.active {
+  background-color: $white;
+  box-shadow: $scroll-box-shahdow;
+  #navbarResponsive .navbar-nav {
+    .nav-item {
+      .button {
+        background-color: $base-secondary;
+      }
+      .button:hover {
+        color: $white;
+      }
+      .nav-link {
+        color: $NavLink-color;
+      }
+    }
+  }
+  .openbtn {
+    color: $cross-color;
+  }
+}
