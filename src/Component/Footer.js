@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import Typography from "@material-ui/core/Typography";
 import { Col, Container, Row, Image } from "react-bootstrap";
 import Link from "@material-ui/core/Link";
+import Box from '@material-ui/core/Box';
 class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="footer spacing">
+        <Box className="footer spacing">
           <Container className="container">
             <Row className="m-0 mt-4">
               <Col lg={4} md={4} sm={6} xs={12}>
@@ -25,16 +26,16 @@ class Footer extends Component {
                 </Typography>
               </Col>
               <Col lg={4} md={4} sm={6} xs={12}>
-                <div className="inner-list">
+                <Box className="inner-list">
                   <Typography variant="h6">Contact Info</Typography>
                   <Typography className="footer-paragraph">
                     1450 Hughes Rd. Suite 200, Grapevana, Texas 76051
                     1.888.786.1512 info@boxer.com
                   </Typography>
-                </div>
+                </Box>
               </Col>
               <Col lg={2} md={4} sm={6} xs={12}>
-                <div className="inner-list">
+                <Box className="inner-list">
                   <h4 className="footer-heading">Company</h4>
                   <ul className="list-unstyled">
                     <li className="footer-links">Home</li>
@@ -43,10 +44,10 @@ class Footer extends Component {
                     <li className="footer-links">Terms & Conditions</li>
                     <li className="footer-links">Blog</li>
                   </ul>
-                </div>
+                </Box>
               </Col>
               <Col lg={2} md={4} sm={6} xs={12}>
-                <div className="inner-list">
+                <Box className="inner-list">
                   <h4 className="footer-heading">Feature</h4>
                   <ul className="list-unstyled">
                     <li className="footer-links">Track Shipment</li>
@@ -55,15 +56,15 @@ class Footer extends Component {
                     <li className="footer-links">One Click Generate</li>
                     <li className="footer-links">No Hassle Sheets</li>
                   </ul>
-                </div>
+                </Box>
               </Col>
             </Row>
           </Container>
-        </div>
-        <div className="copy-right">
-          <div className="container">
-            <div className="d-flex">
-              <div className="footer-icon">
+        </Box>
+        <Box className="copy-right">
+          <Box className="container">
+            <Box className="d-flex">
+              <Box className="footer-icon">
                 <ul className="d-flex list-unstyled copyright-list">
                   <li className="social-icon">
                     <Link>
@@ -86,15 +87,15 @@ class Footer extends Component {
                     </Link>
                   </li>
                 </ul>
-              </div>
-              <div className="copyright-2020">
+              </Box>
+              <Box className="copyright-2020">
                 <Typography className="copyright-paragraph">
                   © 2020 Boxer. All Rights Reserved.
                 </Typography>
-              </div>
-            </div>
-          </div>
-        </div>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
       </React.Fragment>
     );
   }

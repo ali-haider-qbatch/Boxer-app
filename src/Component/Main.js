@@ -3,9 +3,9 @@ import Reviews from "./Reviews";
 import Tools from "./Tools";
 import Pricing from "./Pricing";
 import Brand from "./Brand";
-import Link from "@material-ui/core/Link";
 import { Image, Row, Col, Container, Button } from "react-bootstrap";
 import Typography from "@material-ui/core/Typography";
+import Box from '@material-ui/core/Box';
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -97,10 +97,10 @@ class Main extends Component {
 
     return (
       <React.Fragment>
-        <div className="overlay-div">
+        <Box className="overlay-div">
           <Container>
-            <div className=" d-flex header-control">
-              <div className="text-div">
+            <Box className=" d-flex header-control">
+              <Box className="text-div">
                 <Typography variant="h4" className="h1-heading">
                   Supercharge your Amazon Prep & Pack Business
                 </Typography>
@@ -108,7 +108,7 @@ class Main extends Component {
                   Boxer connects all the different dots Operations into a single
                   platform ensuring growth for your business
                 </Typography>
-                <div className="d-flex started-buttons mt-3">
+                <Box className="d-flex started-buttons mt-3">
                   <Button
                     type="button"
                     className="btn button  get-started-button"
@@ -118,24 +118,24 @@ class Main extends Component {
                   <Button type="button" className="btn button">
                     Request Demo
                   </Button>
-                </div>
-              </div>
-              <div className="laptop-img p-4 mb-4">
-                <div className="img-div">
+                </Box>
+              </Box>
+              <Box className="laptop-img p-4 mb-4">
+                <Box className="img-div">
                   <Image
                     className="laptop-img"
                     src="Assets/laptop.png"
                     alt=""
                   />
-                </div>
-              </div>
-            </div>
+                </Box>
+              </Box>
+            </Box>
           </Container>
-        </div>
-        <div className="container-bg-color">
+        </Box>
+        <Box className="container-bg-color">
           <Container>
             <Row className="m-0 brand-row mb-4">{branding}</Row>
-            <div align="center" className="heading  spacing">
+            <Box align="center" className="heading  spacing">
               <Typography variant="h4" className="h1-heading">
                 Discover how your business can work smarter!
               </Typography>
@@ -146,21 +146,21 @@ class Main extends Component {
                 Shipment.Easily Create box content barcodes and validate packed
                 items to shipment plan
               </Typography>
-            </div>
+            </Box>
             <Row className="m-0">{rows}</Row>
           </Container>
-        </div>
-        <div className="w-100 Succeed-your-business mt-4">
+        </Box>
+        <Box className="w-100 Succeed-your-business mt-4">
           <Container>
-            <div className="inner-data">
-              <div align="center" className="heading spacing  mb-4 mt-4">
+            <Box className="inner-data">
+              <Box align="center" className="heading spacing  mb-4 mt-4">
                 <Typography variant="h4" className="mb-3 mt-3 h1-heading">
                   How it works to succeed your business{" "}
                 </Typography>
                 <Typography align="center" className=" business-detail">
                   {this.state.ShipmentPara}
                 </Typography>
-              </div>
+              </Box>
               <Row className="m-0 spacing">
                 <Col lg={6} md={6} sm={6} xs={12}>
                   <Typography variant="h5" className="Shipment-heading">
@@ -171,23 +171,23 @@ class Main extends Component {
                   </Typography>
                 </Col>
                 <Col lg={6} md={6} sm={6} xs={12}>
-                  <div align="center" className="shipment">
+                  <Box align="center" className="shipment">
                     <Image
                       className="shipment-img"
                       src="Assets/illustrationTrackShipment.png"
                       alt=""
                     />
-                  </div>
+                  </Box>
                 </Col>
-                <div className="reserve-data">
+                <Box className="reserve-data">
                   <Col lg={6} md={6} sm={6} xs={12}>
-                    <div align="center" className="shipment">
+                    <Box align="center" className="shipment">
                       <Image
                         className="shipment-img"
                         src="Assets/illustrationExtractPrep.png"
                         alt=""
                       />
-                    </div>
+                    </Box>
                   </Col>
                   <Col lg={6} md={6} sm={6} xs={12}>
                     <Typography variant="h5" className="Shipment-heading">
@@ -197,7 +197,7 @@ class Main extends Component {
                       {this.state.ShipmentPara}
                     </Typography>
                   </Col>
-                </div>
+                </Box>
                 <Col lg={6} md={6} sm={6} xs={12}>
                   <Typography variant="h5" className="Shipment-heading">
                     {this.state.shipment}
@@ -207,23 +207,23 @@ class Main extends Component {
                   </Typography>
                 </Col>
                 <Col lg={6} md={6} sm={6} xs={12}>
-                  <div align="center" className="shipment">
+                  <Box align="center" className="shipment">
                     <Image
                       className="shipment-img"
                       src="Assets/illustrationPrepareLabel.png"
                       alt=""
                     />
-                  </div>
+                  </Box>
                 </Col>
-                <div className="reserve-data">
+                <Box className="reserve-data">
                   <Col lg={6} md={6} sm={6} xs={12}>
-                    <div align="center" className="shipment">
+                    <Box align="center" className="shipment">
                       <Image
                         className="shipment-img"
                         src="Assets/illustrationGenerateLabels.png"
                         alt=""
                       />
-                    </div>
+                    </Box>
                   </Col>
                   <Col lg={6} md={6} sm={6} xs={12}>
                     <Typography variant="h5" className="Shipment-heading">
@@ -233,11 +233,11 @@ class Main extends Component {
                       {this.state.ShipmentPara}
                     </Typography>
                   </Col>
-                </div>
+                </Box>
               </Row>
-            </div>
+            </Box>
           </Container>
-          <div className="progress-div">
+          <Box className="progress-div">
             <Container>
               <Row className="m-0">
                 <Col md={4} sm={12} align="center" className=" mt-3">
@@ -276,26 +276,26 @@ class Main extends Component {
                 </Col>
               </Row>
             </Container>
-          </div>
-          <div className="pricing spacing">
+          </Box>
+          <Box className="pricing spacing">
             <Container>
               <Typography variant="h4" align="center" className=" spacing">
                 Simple Plans to boost your business
               </Typography>
               <Row className="m-0">{pricing}</Row>
             </Container>
-          </div>
-          <div className="company-intro">
+          </Box>
+          <Box className="company-intro">
             <Container>
-              <div className="d-flex spacing">
-                <div className="img-div">
+              <Box className="d-flex spacing">
+                <Box className="img-div">
                   <Image
                     className="client-img"
                     src="Assets/CeoImage.png"
                     alt=""
                   />
-                </div>
-                <div className="detail-img">
+                </Box>
+                <Box className="detail-img">
                   <Typography variant="h4" className="h1-heading">
                     Our company
                   </Typography>
@@ -327,9 +327,9 @@ class Main extends Component {
                     Get all the benefits of hiring an agency, without the hassle
                     or expense.
                   </Typography>
-                </div>
-              </div>
-              <div className="customer-says mt-4">
+                </Box>
+              </Box>
+              <Box className="customer-says mt-4">
                 <Typography
                   variant="h4"
                   align="center"
@@ -342,19 +342,19 @@ class Main extends Component {
                   system
                 </Typography>
                 <Row className=" m-0">{About}</Row>
-              </div>
+              </Box>
             </Container>
-            <div className="Ask-question">
+            <Box className="Ask-question">
               <Container>
-                <div align="center" className="Freq-heading mt-4">
+                <Box align="center" className="Freq-heading mt-4">
                   <Typography variant="h4" className="spacing h1-heading">
                     Frequently Asked Questions
                   </Typography>
-                </div>
-                <div class="collapse-2 p-3">
-                  <div class="panel-group">
-                    <div class="panel">
-                      <div class="panel-heading" role="tab" id="headingOne">
+                </Box>
+                <Box class="collapse-2 p-3">
+                  <Box class="panel-group">
+                    <Box class="panel">
+                      <Box class="panel-heading" role="tab" id="headingOne">
                         <h4 class="panel-title">
                           <a
                             data-toggle="collapse"
@@ -367,24 +367,24 @@ class Main extends Component {
                             Do you have demo?
                           </a>
                         </h4>
-                      </div>
-                      <div
+                      </Box>
+                      <Box
                         id="collapseOne"
                         class="panel-collapse collapse in"
                         role="tabpanel"
                         aria-labelledby="headingOne"
                       >
-                        <div class="panel-body">
+                        <Box class="panel-body">
                           Yes! We do have a 7-day free trial period where you
                           could explore and test Boxer System to your
                           satisfaction. After the trial, you’ll automatically be
                           subscribed to the plan you choose during the trial
                           period.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel">
-                      <div class="panel-heading" role="tab" id="headingTwo">
+                        </Box>
+                      </Box>
+                    </Box>
+                    <Box class="panel">
+                      <Box class="panel-heading" role="tab" id="headingTwo">
                         <h4 class="panel-title">
                           <a
                             class="collapsed"
@@ -397,21 +397,21 @@ class Main extends Component {
                             What countries does Boxer support?
                           </a>
                         </h4>
-                      </div>
-                      <div
+                      </Box>
+                      <Box
                         id="collapseTwo"
                         class="panel-collapse collapse"
                         role="tabpanel"
                         aria-labelledby="headingTwo"
                       >
-                        <div class="panel-body">
+                        <Box class="panel-body">
                           Anim pariatur cliche reprehenderit, enim eiusmod high
                           life accusamus terry richardson ad squid.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel">
-                      <div class="panel-heading" role="tab" id="headingThree">
+                        </Box>
+                      </Box>
+                    </Box>
+                    <Box class="panel">
+                      <Box class="panel-heading" role="tab" id="headingThree">
                         <h4 class="panel-title">
                           <a
                             class="collapsed"
@@ -424,21 +424,21 @@ class Main extends Component {
                             How much does Boxer cost?
                           </a>
                         </h4>
-                      </div>
-                      <div
+                      </Box>
+                      <Box
                         id="collapseThree"
                         class="panel-collapse collapse"
                         role="tabpanel"
                         aria-labelledby="headingThree"
                       >
-                        <div class="panel-body">
+                        <Box class="panel-body">
                           Anim pariatur cliche reprehenderit, enim eiusmod high
                           life accusamus terry richardson ad squid.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel">
-                      <div class="panel-heading" role="tab" id="headingThree">
+                        </Box>
+                      </Box>
+                    </Box>
+                    <Box class="panel">
+                      <Box class="panel-heading" role="tab" id="headingThree">
                         <h4 class="panel-title">
                           <a
                             class="collapsed"
@@ -451,21 +451,21 @@ class Main extends Component {
                             Can this tool be used on multiple computers?
                           </a>
                         </h4>
-                      </div>
-                      <div
+                      </Box>
+                      <Box
                         id="collapseFour"
                         class="panel-collapse collapse"
                         role="tabpanel"
                         aria-labelledby="headingFour"
                       >
-                        <div class="panel-body">
+                        <Box class="panel-body">
                           Anim pariatur cliche reprehenderit, enim eiusmod high
                           life accusamus terry richardson ad squid.{" "}
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel">
-                      <div class="panel-heading" role="tab" id="headingFive">
+                        </Box>
+                      </Box>
+                    </Box>
+                    <Box class="panel">
+                      <Box class="panel-heading" role="tab" id="headingFive">
                         <h4 class="panel-title">
                           <a
                             class="collapsed"
@@ -478,21 +478,21 @@ class Main extends Component {
                             What label sizes are supported?
                           </a>
                         </h4>
-                      </div>
-                      <div
+                      </Box>
+                      <Box
                         id="collapseFive"
                         class="panel-collapse collapse"
                         role="tabpanel"
                         aria-labelledby="headingFive"
                       >
-                        <div class="panel-body">
+                        <Box class="panel-body">
                           Anim pariatur cliche reprehenderit, enim eiusmod high
                           life accusamus terry richardson ad squid.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel border-bottom">
-                      <div class="panel-heading" role="tab" id="headingSix">
+                        </Box>
+                      </Box>
+                    </Box>
+                    <Box class="panel border-bottom">
+                      <Box class="panel-heading" role="tab" id="headingSix">
                         <h4 class="panel-title">
                           <a
                             class="collapsed"
@@ -505,26 +505,26 @@ class Main extends Component {
                             How does Boxer protect my data?
                           </a>
                         </h4>
-                      </div>
-                      <div
+                      </Box>
+                      <Box
                         id="collapseSix"
                         class="panel-collapse collapse"
                         role="tabpanel"
                         aria-labelledby="headingSix"
                       >
-                        <div class="panel-body">
+                        <Box class="panel-body">
                           Anim pariatur cliche reprehenderit, enim eiusmod high
                           life accusamus terry richardson ad squid.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                        </Box>
+                      </Box>
+                    </Box>
+                  </Box>
+                </Box>
               </Container>
-            </div>
-          </div>
-          <div className="started-business">
-            <div className="heading">
+            </Box>
+          </Box>
+          <Box className="started-business">
+            <Box className="heading">
               <Typography variant="h4" className="h1-heading">
                 Ready to Supercharge your Amazon Business
               </Typography>
@@ -533,7 +533,7 @@ class Main extends Component {
                 platform ensuring growth <br />
                 and success platform ensuring.
               </Typography>
-              <div className="d-flex started-buttons">
+              <Box className="d-flex started-buttons">
                 <Button
                   type="button"
                   className="btn button  get-started-button"
@@ -543,10 +543,10 @@ class Main extends Component {
                 <Button type="button" className="btn button">
                   Request Demo
                 </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
       </React.Fragment>
     );
   }

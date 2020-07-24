@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { HashRouter } from "react-router-dom";
 import { Image, Button, Navbar, Nav } from "react-bootstrap";
 import Link from "@material-ui/core/Link";
+import Box from '@material-ui/core/Box';
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -53,7 +54,7 @@ class Header extends Component {
             className={navClass}
             style={{ background: this.state.color }}
           >
-            <div className="container">
+            <Box className="container">
               <Link className="navbar-brand" href="index.html">
                 <Image
                   src={this.state.img}
@@ -62,7 +63,7 @@ class Header extends Component {
                   alt=""
                 />
               </Link>
-              <div className="collapse navbar-collapse" id="navbarResponsive">
+              <Box className="collapse navbar-collapse" id="navbarResponsive">
                 <Nav className="navbar-nav ml-auto">
                   <Nav.Link className="nav-item">
                     <Link underline="none" className="nav-link " href="#">
@@ -102,12 +103,12 @@ class Header extends Component {
                     </Button>
                   </Nav.Link>
                 </Nav>
-              </div>
-            </div>
+              </Box>
+            </Box>
           </Navbar>
-          <div className="boxer-sidemenu ">
-            <div id="mySidebar" className="sidebar">
-              <div className="d-flex">
+          <Box className="boxer-sidemenu ">
+            <Box id="mySidebar" className="sidebar">
+              <Box className="d-flex">
                 <Link
                   underline="none"
                   // href="javascript:void(0)"
@@ -121,7 +122,7 @@ class Header extends Component {
                   src="Assets/WebLogoBlue.png"
                   alt=""
                 />
-              </div>
+              </Box>
               <Link
                 underline="none"
                 href="#"
@@ -157,11 +158,11 @@ class Header extends Component {
               >
                 TESETMONIALS
               </Link>
-              <div align="center" className="mt-3">
+              <Box align="center" className="mt-3">
                 <Button className="btn button get-started">Get Started</Button>
-              </div>
-            </div>
-            <div
+              </Box>
+            </Box>
+            <Box
               id="main"
               className={mobileMenu}
               style={{ background: this.state.color }}
@@ -170,8 +171,8 @@ class Header extends Component {
               <Button className="openbtn text-left" onClick={this.openNav}>
                 &#9776;
               </Button>
-            </div>
-          </div>
+            </Box>
+          </Box>
         </HashRouter>
       </React.Fragment>
     );
