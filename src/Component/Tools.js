@@ -8,7 +8,7 @@ class Tools extends Component {
     return (
       <React.Fragment>
         <Col lg={4} md={4} sm={6} xs={12}>
-          <Box className="business-tools">
+          <Box className="business-tools" bgcolor="#fff">
             <Box className="Tools">
               <Box className="track-shipment">
                 <Image className="Tools-img" src={"Assets/" + img} alt="" />

@@ -7,9 +7,9 @@ class Reviews extends Component {
     return (
       <React.Fragment>
         <Col lg={4} md={4} sm={6} xs={12}>
-          <Box className="reviews">
+          <Box bgcolor="#f7fbff" className="reviews" border={1} borderColor="#eae8e8">
             <Image src="Assets/quote-icon.png" alt="" />
-            <p className="reviews-paragraph">
+            <p color="#535d73" className="reviews-paragraph">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal

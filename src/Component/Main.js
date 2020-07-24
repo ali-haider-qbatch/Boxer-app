@@ -97,10 +97,10 @@ class Main extends Component {
 
     return (
       <React.Fragment>
-        <Box className="overlay-div">
+        <Box className="overlay-div" bgcolor="#0d2187">
           <Container>
-            <Box className=" d-flex header-control">
-              <Box className="text-div">
+            <Box display="flex" className=" header-control">
+              <Box className="text-div" color="#fff">
                 <Typography variant="h4" className="h1-heading">
                   Supercharge your Amazon Prep & Pack Business
                 </Typography>
@@ -108,7 +108,7 @@ class Main extends Component {
                   Boxer connects all the different dots Operations into a single
                   platform ensuring growth for your business
                 </Typography>
-                <Box className="d-flex started-buttons mt-3">
+                <Box display="flex" justifyContent="flex-start" mt={2} className=" started-buttons" >
                   <Button
                     type="button"
                     className="btn button  get-started-button"
@@ -120,7 +120,7 @@ class Main extends Component {
                   </Button>
                 </Box>
               </Box>
-              <Box className="laptop-img p-4 mb-4">
+              <Box p={2} mb={3} className="laptop-img">
                 <Box className="img-div">
                   <Image
                     className="laptop-img"
@@ -132,11 +132,11 @@ class Main extends Component {
             </Box>
           </Container>
         </Box>
-        <Box className="container-bg-color">
+        <Box className="container-bg-color" bgcolor="#f3f4f6">
           <Container>
             <Row className="m-0 brand-row mb-4">{branding}</Row>
-            <Box align="center" className="heading  spacing">
-              <Typography variant="h4" className="h1-heading">
+            <Box align="center" p={6} className="heading">
+              <Typography variant="h4" color="#fff" className="h1-heading">
                 Discover how your business can work smarter!
               </Typography>
               <Typography>
@@ -150,11 +150,11 @@ class Main extends Component {
             <Row className="m-0">{rows}</Row>
           </Container>
         </Box>
-        <Box className="w-100 Succeed-your-business mt-4">
+        <Box bgcolor="#fff" width="100%" mt={2.5} className=" Succeed-your-business">
           <Container>
             <Box className="inner-data">
-              <Box align="center" className="heading spacing  mb-4 mt-4">
-                <Typography variant="h4" className="mb-3 mt-3 h1-heading">
+              <Box align="center" mt={2} mb={3} p={6} className="heading">
+                <Typography variant="h4" className="h1-heading">
                   How it works to succeed your business{" "}
                 </Typography>
                 <Typography align="center" className=" business-detail">
@@ -237,10 +237,10 @@ class Main extends Component {
               </Row>
             </Box>
           </Container>
-          <Box className="progress-div">
+          <Box bgcolor="#0d2187" color="#fff" p={6} className="progress-div">
             <Container>
               <Row className="m-0">
-                <Col md={4} sm={12} align="center" className=" mt-3">
+                <Col md={4} sm={12} align="center" >
                   <Typography
                     variant="h4"
                     align="center"
@@ -254,7 +254,7 @@ class Main extends Component {
                     Boxers insure in revenue the increase.
                   </Typography>
                 </Col>
-                <Col md={4} sm={12} align="center" className=" mt-3">
+                <Col md={4} sm={12} align="center" >
                   <Typography variant="h4" className="h1-heading">
                     200
                   </Typography>
@@ -264,7 +264,7 @@ class Main extends Component {
                     Amazon sellers worldwide rely on Boxer.
                   </Typography>
                 </Col>
-                <Col md={4} sm={12} align="center" className=" mt-3">
+                <Col md={4} sm={12} align="center">
                   <Typography variant="h4" className="h1-heading">
                     25%
                   </Typography>
@@ -277,7 +277,7 @@ class Main extends Component {
               </Row>
             </Container>
           </Box>
-          <Box className="pricing spacing">
+          <Box pt={3.5} pb={3.5} bgcolor="#f7fbff" className="pricing">
             <Container>
               <Typography variant="h4" align="center" className=" spacing">
                 Simple Plans to boost your business
@@ -285,17 +285,17 @@ class Main extends Component {
               <Row className="m-0">{pricing}</Row>
             </Container>
           </Box>
-          <Box className="company-intro">
+          <Box bgcolor="#fff" className="company-intro">
             <Container>
-              <Box className="d-flex spacing">
-                <Box className="img-div">
+              <Box p={6} className="company-intro d-flex">
+                <Box  >
                   <Image
                     className="client-img"
                     src="Assets/CeoImage.png"
                     alt=""
                   />
                 </Box>
-                <Box className="detail-img">
+                <Box bgcolor="#0d2187" className="detail-img" color="#fff">
                   <Typography variant="h4" className="h1-heading">
                     Our company
                   </Typography>
@@ -329,7 +329,7 @@ class Main extends Component {
                   </Typography>
                 </Box>
               </Box>
-              <Box className="customer-says mt-4">
+              <Box mt={2} className="customer-says">
                 <Typography
                   variant="h4"
                   align="center"
@@ -344,14 +344,14 @@ class Main extends Component {
                 <Row className=" m-0">{About}</Row>
               </Box>
             </Container>
-            <Box className="Ask-question">
+            <Box bgcolor="#f7fbff" className="Ask-question">
               <Container>
-                <Box align="center" className="Freq-heading mt-4">
+                <Box align="center" mt={3} className="Freq-heading">
                   <Typography variant="h4" className="spacing h1-heading">
                     Frequently Asked Questions
                   </Typography>
                 </Box>
-                <Box class="collapse-2 p-3">
+                <Box p={2} class="collapse-2">
                   <Box class="panel-group">
                     <Box class="panel">
                       <Box class="panel-heading" role="tab" id="headingOne">
@@ -523,17 +523,17 @@ class Main extends Component {
               </Container>
             </Box>
           </Box>
-          <Box className="started-business">
+          <Box bgcolor="#0d2187" color="#fff" className="started-business">
             <Box className="heading">
               <Typography variant="h4" className="h1-heading">
                 Ready to Supercharge your Amazon Business
               </Typography>
-              <Typography className="business-paragraph">
+              <Typography color="#535d73" className="business-paragraph">
                 Boxer connects all the different dots Operations into a single
                 platform ensuring growth <br />
                 and success platform ensuring.
               </Typography>
-              <Box className="d-flex started-buttons">
+              <Box display="flex" justifyContent="center" className="started-buttons">
                 <Button
                   type="button"
                   className="btn button  get-started-button"

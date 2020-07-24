@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-        <Box className="footer spacing">
+        <Box p={6} className="footer">
           <Container className="container">
             <Row className="m-0 mt-4">
               <Col lg={4} md={4} sm={6} xs={12}>
@@ -18,7 +18,7 @@ class Footer extends Component {
                     alt=""
                   />
                 </Link>
-                <Typography className="footer-paragraph">
+                <Typography className="footer-paragraph" color="#535d73">
                   FBA-compliant labels are the easiest way to provide box
                   contents information for your inbound Amazon FBA shipments.
                   Easily create box content barcodes and validate packed items
@@ -38,11 +38,11 @@ class Footer extends Component {
                 <Box className="inner-list">
                   <h4 className="footer-heading">Company</h4>
                   <ul className="list-unstyled">
-                    <li className="footer-links">Home</li>
-                    <li className="footer-links">About Us</li>
-                    <li className="footer-links">Contact Us</li>
-                    <li className="footer-links">Terms & Conditions</li>
-                    <li className="footer-links">Blog</li>
+                    <li className="footer-links" color="#525f75">Home</li>
+                    <li className="footer-links" color="#525f75">About Us</li>
+                    <li className="footer-links" color="#525f75">Contact Us</li>
+                    <li className="footer-links" color="#525f75">Terms & Conditions</li>
+                    <li className="footer-links" color="#525f75">Blog</li>
                   </ul>
                 </Box>
               </Col>
@@ -61,11 +61,11 @@ class Footer extends Component {
             </Row>
           </Container>
         </Box>
-        <Box className="copy-right">
+        <Box className="copy-right" bgcolor="#0d2187">
           <Box className="container">
             <Box className="d-flex">
               <Box className="footer-icon">
-                <ul className="d-flex list-unstyled copyright-list">
+                <ul className="d-flex  list-unstyled copyright-list">
                   <li className="social-icon">
                     <Link>
                       <Image src="Assets/Group 454.png" />
@@ -88,8 +88,8 @@ class Footer extends Component {
                   </li>
                 </ul>
               </Box>
-              <Box className="copyright-2020">
-                <Typography className="copyright-paragraph">
+              <Box color="#fff" className="copyright-2020">
+                <Typography className="copyright-paragraph" >
                   © 2020 Boxer. All Rights Reserved.
                 </Typography>
               </Box>

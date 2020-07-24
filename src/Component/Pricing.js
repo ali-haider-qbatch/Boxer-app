@@ -8,8 +8,8 @@ class Pricing extends Component {
     const { UserHeading, h1Heading, userLimit } = this.props.price;
     return (
       <React.Fragment>
-        <Col lg={4} md={4} sm={6} xs={12}>
-          <Box className="inner-pricing-div">
+        <Col lg={4} md={6} sm={6} xs={12}>
+          <Box bgcolor="#fff" className="inner-pricing-div">
             <Box align="center" className="user-div">
               <h3 className="User-heading">{UserHeading}</h3>
             </Box>
@@ -26,7 +26,7 @@ class Pricing extends Component {
               <Box className="order-list">
                 <ul className="list-unstyled pb-4">
                   <li className="check-li">
-                    <FaCheck className="check-icon" />
+                    <FaCheck color="#0d2187" className="check-icon" />
                     FNSKU Label printing
                   </li>
                   <li className="check-li">

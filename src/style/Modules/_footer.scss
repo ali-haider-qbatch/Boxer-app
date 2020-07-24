@@ -5,8 +5,8 @@
     margin: 15px 0 0 0;
   }
   .footer-paragraph {
-    color: $base-light;
     font-size: 18px;
+    color: #535d73;
   }
   .inner-list {
     .footer-heading {
@@ -18,12 +18,10 @@
       font-weight: 300;
       padding: 3px 0px;
       cursor: pointer;
-      color: $footer-li-color;
     }
   }
 }
 .copy-right {
-  background-color: $base-primary;
   .d-flex {
     justify-content: space-between;
     padding: 5px 0;
@@ -35,7 +33,6 @@
       }
     }
     .copyright-paragraph {
-      color: $white;
       font-weight: 300;
       font-size: 14px;
       margin: 26px 0;

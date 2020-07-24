@@ -97,7 +97,7 @@ class Header extends Component {
                   <Nav.Link align="center" className="nav-item">
                     <Button
                       type="button"
-                      className="btn button get-started-button"
+                      className="btn button get-started-button" borderColor="#fff"
                     >
                       Get Started
                     </Button>
@@ -107,8 +107,8 @@ class Header extends Component {
             </Box>
           </Navbar>
           <Box className="boxer-sidemenu ">
-            <Box id="mySidebar" className="sidebar">
-              <Box className="d-flex">
+            <Box id="mySidebar" className="sidebar" bgcolor="#fff">
+              <Box display="flex">
                 <Link
                   underline="none"
                   // href="javascript:void(0)"
@@ -158,8 +158,8 @@ class Header extends Component {
               >
                 TESETMONIALS
               </Link>
-              <Box align="center" className="mt-3">
-                <Button className="btn button get-started">Get Started</Button>
+              <Box align="center" mt={2}>
+                <Button className="btn button get-started" bgcolor="#0d2287">Get Started</Button>
               </Box>
             </Box>
             <Box
@@ -168,7 +168,7 @@ class Header extends Component {
               style={{ background: this.state.color }}
             >
               <Image className="sidebar-img" src={this.state.img} alt="" />
-              <Button className="openbtn text-left" onClick={this.openNav}>
+              <Button className="openbtn text-left" color="#fff" onClick={this.openNav}>
                 &#9776;
               </Button>
             </Box>

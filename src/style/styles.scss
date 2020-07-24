@@ -2,6 +2,7 @@
 @import "./Modules/footer";
 @import "./fonts";
 @import "./default";
+@import "./varibale";
 .body,
 .MuiTypography {
   font-family: myFirstFont;
@@ -27,7 +28,6 @@
   padding: 45px 0;
 }
 .overlay-div {
-  background-color: $base-primary;
   padding-top: 90px;
 }
 .overlay-div {
@@ -35,12 +35,10 @@
     padding: 100px 0;
   }
   .h1-heading {
-    color: $white;
     @include heading;
   }
   .amazon-para {
     font-size: 18px;
-    color: $white;
     margin: 22px 0px;
   }
   .button {
@@ -69,12 +67,7 @@
   }
 }
 .container-bg-color {
-  background-color: $base-gray-dark;
   padding-bottom: 8em;
-  .brand-9 {
-    display: flex;
-    justify-content: center;
-  }
   .logs {
     padding: 30px;
     .logo-img {
@@ -88,12 +81,10 @@
 
   .heading {
     .business-paragraph {
-      color: $base-light;
       font-size: 18px;
     }
   }
   .business-tools {
-    background-color: $white;
     box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12),
       0 0 1px 0 rgba(41, 92, 176, 0.25);
     border-radius: 5px;
@@ -137,25 +128,18 @@
   }
 }
 .Succeed-your-business {
-  background-color: $white;
-
   .progress-div {
-    background-color: $base-primary;
-    color: $white;
-    padding: 45px 0;
     .revenue-heading {
       font-size: 16px;
     }
   }
   .pricing {
-    background-color: $background-color;
     .h1-heading {
       padding: 1rem;
     }
     .inner-pricing-div {
       box-shadow: 0px 3px 6px $base-box-shadow;
       border-radius: 10px;
-      background-color: $white;
       .user-div {
         border-bottom: 1px solid $border-bottom;
         padding: 30px;
@@ -176,115 +160,105 @@
           padding: 7px 0 7px 28px;
           font-size: 14px;
           font-weight: 300;
-          text-align: justify;
-          .check-icon {
-            margin-right: 10px;
-            color: $base-primary;
-            font-size: 14px;
-          }
+          margin-right: 10px;
+          font-size: 14px;
+        }
+        .check-icon {
+          color: #0f2187;
+          margin-right: 10px;
         }
       }
     }
   }
-  .company-intro {
-    .client-img {
-      max-width: 100%;
+}
+.company-intro {
+  .client-img {
+    max-width: 100%;
+  }
+  .detail-img {
+    border-radius: 0px 10px 10px 0px;
+    padding: 6px 38px;
+    .company-paragraph {
+      font-size: 13px;
+      font-weight: 300;
+      margin-bottom: 14px;
     }
-    .detail-img {
-      background-color: $base-primary;
-      color: $white;
-      border-radius: 0px 10px 10px 0px;
-      padding: 6px 38px;
-      .company-paragraph {
-        font-size: 13px;
+  }
+  .customer-says {
+    margin-bottom: 4em;
+    .reviews {
+      box-shadow: 7px 7px 10px $div-box-Shahdow;
+      border-radius: 5px;
+      padding: 30px 20px;
+      .reviews-paragraph {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 20px;
         font-weight: 300;
-        margin-bottom: 20px;
       }
-    }
-    .customer-says {
-      margin-bottom: 4em;
-      .reviews {
-        box-shadow: 7px 7px 10px $div-box-Shahdow;
-        background-color: $background-color;
-        border: 1px solid $border-bottom;
-        border-radius: 5px;
-        padding: 30px 20px;
-        .reviews-paragraph {
-          color: $base-light;
-          font-size: 16px;
-          line-height: 28px;
-          margin-top: 20px;
-          font-weight: 300;
-        }
-        .Image-info {
-          margin: 7px 13px;
-        }
+      .Image-info {
+        margin: 7px 13px;
       }
     }
   }
-  .Ask-question {
-    background-color: $background-color;
-    padding-bottom: 70px;
-    .panel {
-      padding: 30px 0;
-      border-top: 1px solid $border-color;
+}
+.Ask-question {
+  padding-bottom: 70px;
+  .panel {
+    padding: 30px 0;
+    border-top: 1px solid $border-color;
+  }
+  .panel-title > a:before {
+    float: left;
+    font-family: FontAwesome;
+    content: "\f068";
+    padding: 5px 15px;
+    font-size: 20px;
+    color: $heading-color;
+  }
+  .panel-title > a.collapsed:before {
+    float: left;
+    content: "\f067";
+  }
+  .panel-title > a:hover,
+  .panel-title > a:active,
+  .panel-title > a:focus {
+    text-decoration: none;
+  }
+  .panel-title a {
+    color: $heading-color;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .panel-body {
+    padding-left: 45px;
+    font-size: 18px;
+    font-weight: 200;
+  }
+}
+.started-business {
+  padding: 60px 0;
+  text-align: center;
+  .heading {
+    .h1-heading {
+      @include heading;
     }
-    .panel-title > a:before {
-      float: left;
-      font-family: FontAwesome;
-      content: "\f068";
-      padding: 5px 15px;
-      font-size: 20px;
-      color: $heading-color;
-    }
-    .panel-title > a.collapsed:before {
-      float: left;
-      content: "\f067";
-    }
-    .panel-title > a:hover,
-    .panel-title > a:active,
-    .panel-title > a:focus {
-      text-decoration: none;
-    }
-    .panel-title a {
-      color: $heading-color;
-      font-size: 20px;
-      font-weight: 400;
-    }
-    .panel-body {
-      padding-left: 45px;
+    .business-paragraph {
       font-size: 18px;
-      font-weight: 200;
     }
   }
-  .started-business {
-    background-color: $base-primary;
-    color: $white;
-    padding: 60px 0;
-    text-align: center;
-    .heading {
-      .h1-heading {
-        @include heading;
-      }
-      .business-paragraph {
-        font-size: 18px;
-      }
+  .started-buttons {
+    margin-top: 20px;
+    .button {
+      @include Boxer-button;
+      margin-right: 10px;
     }
-    .started-buttons {
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      .button {
-        @include Boxer-button;
-        margin-right: 10px;
-      }
-      .button:hover {
-        background-color: $white;
-        color: $base-primary;
-      }
-      .get-started-button {
-        @include get-started-button;
-      }
+    .button:hover {
+      background-color: $white;
+      color: $base-primary;
+    }
+    .get-started-button {
+      @include get-started-button;
     }
   }
 }
@@ -339,6 +313,7 @@
   }
   .overlay-div .img-div {
     height: 475px;
+    padding: 90px 0;
   }
   .container-bg-color .business-tools {
     width: 100%;
@@ -392,11 +367,7 @@
   }
   .overlay-div .amazon-para {
     font-size: 14px;
-    color: $white;
     margin: 10px 0px;
-  }
-  .started-buttons {
-    justify-content: center;
   }
   .Succeed-your-business .pricing .inner-pricing-div .order-list .check-li {
     padding: 7px 0 7px 18px;
@@ -440,7 +411,6 @@
   .started-business .started-buttons {
     padding: 10px 27px;
     text-align: center;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     .button,
@@ -488,7 +458,6 @@
     padding: 7px;
   }
   .Succeed-your-business .started-business .get-started-button {
-    width: 138px;
     font-size: 14px;
   }
   .Shipment-heading,

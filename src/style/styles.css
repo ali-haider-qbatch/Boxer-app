@@ -23,7 +23,6 @@
 }
 
 .nav-item .get-started-button {
-  color: #ffffff;
   background-color: transparent;
   background-image: none;
   border: 1.5px solid #ffffff;
@@ -65,7 +64,6 @@
   z-index: 1003;
   top: 0;
   right: 0;
-  background-color: #ffffff;
   overflow-x: hidden;
   padding-top: 60px;
   -webkit-transition: 0.5s;
@@ -179,8 +177,8 @@
 }
 
 .footer .footer-paragraph {
-  color: #535d73;
   font-size: 18px;
+  color: #535d73;
 }
 
 .footer .inner-list {
@@ -196,11 +194,6 @@
   font-weight: 300;
   padding: 3px 0px;
   cursor: pointer;
-  color: #525f75;
-}
-
-.copy-right {
-  background-color: #0d2187;
 }
 
 .copy-right .d-flex {
@@ -220,7 +213,6 @@
 }
 
 .copy-right .d-flex .copyright-paragraph {
-  color: #ffffff;
   font-weight: 300;
   font-size: 14px;
   margin: 26px 0;
@@ -282,7 +274,6 @@
 }
 
 .overlay-div {
-  background-color: #0d2187;
   padding-top: 90px;
 }
 
@@ -291,13 +282,11 @@
 }
 
 .overlay-div .h1-heading {
-  color: #ffffff;
   font-family: bold-font;
 }
 
 .overlay-div .amazon-para {
   font-size: 18px;
-  color: #ffffff;
   margin: 22px 0px;
 }
 
@@ -340,17 +329,7 @@
 }
 
 .container-bg-color {
-  background-color: #f3f4f6;
   padding-bottom: 8em;
-}
-
-.container-bg-color .brand-9 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .container-bg-color .logs {
@@ -367,12 +346,10 @@
 }
 
 .container-bg-color .heading .business-paragraph {
-  color: #535d73;
   font-size: 18px;
 }
 
 .container-bg-color .business-tools {
-  background-color: #ffffff;
   -webkit-box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
           box-shadow: 0 4px 3px 0 rgba(34, 90, 182, 0.12), 0 0 1px 0 rgba(41, 92, 176, 0.25);
   border-radius: 5px;
@@ -417,22 +394,8 @@
   width: 175px;
 }
 
-.Succeed-your-business {
-  background-color: #ffffff;
-}
-
-.Succeed-your-business .progress-div {
-  background-color: #0d2187;
-  color: #ffffff;
-  padding: 45px 0;
-}
-
 .Succeed-your-business .progress-div .revenue-heading {
   font-size: 16px;
-}
-
-.Succeed-your-business .pricing {
-  background-color: #f7fbff;
 }
 
 .Succeed-your-business .pricing .h1-heading {
@@ -443,7 +406,6 @@
   -webkit-box-shadow: 0px 3px 6px #dce6f5;
           box-shadow: 0px 3px 6px #dce6f5;
   border-radius: 10px;
-  background-color: #ffffff;
 }
 
 .Succeed-your-business .pricing .inner-pricing-div .user-div {
@@ -473,68 +435,62 @@
   padding: 7px 0 7px 28px;
   font-size: 14px;
   font-weight: 300;
-  text-align: justify;
-}
-
-.Succeed-your-business .pricing .inner-pricing-div .order-list .check-li .check-icon {
   margin-right: 10px;
-  color: #0d2187;
   font-size: 14px;
 }
 
-.Succeed-your-business .company-intro .client-img {
+.Succeed-your-business .pricing .inner-pricing-div .order-list .check-icon {
+  color: #0f2187;
+  margin-right: 10px;
+}
+
+.company-intro .client-img {
   max-width: 100%;
 }
 
-.Succeed-your-business .company-intro .detail-img {
-  background-color: #0d2187;
-  color: #ffffff;
+.company-intro .detail-img {
   border-radius: 0px 10px 10px 0px;
   padding: 6px 38px;
 }
 
-.Succeed-your-business .company-intro .detail-img .company-paragraph {
+.company-intro .detail-img .company-paragraph {
   font-size: 13px;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
-.Succeed-your-business .company-intro .customer-says {
+.company-intro .customer-says {
   margin-bottom: 4em;
 }
 
-.Succeed-your-business .company-intro .customer-says .reviews {
+.company-intro .customer-says .reviews {
   -webkit-box-shadow: 7px 7px 10px #0000001a;
           box-shadow: 7px 7px 10px #0000001a;
-  background-color: #f7fbff;
-  border: 1px solid #eae8e8;
   border-radius: 5px;
   padding: 30px 20px;
 }
 
-.Succeed-your-business .company-intro .customer-says .reviews .reviews-paragraph {
-  color: #535d73;
+.company-intro .customer-says .reviews .reviews-paragraph {
   font-size: 16px;
   line-height: 28px;
   margin-top: 20px;
   font-weight: 300;
 }
 
-.Succeed-your-business .company-intro .customer-says .reviews .Image-info {
+.company-intro .customer-says .reviews .Image-info {
   margin: 7px 13px;
 }
 
-.Succeed-your-business .Ask-question {
-  background-color: #f7fbff;
+.Ask-question {
   padding-bottom: 70px;
 }
 
-.Succeed-your-business .Ask-question .panel {
+.Ask-question .panel {
   padding: 30px 0;
   border-top: 1px solid #ccc;
 }
 
-.Succeed-your-business .Ask-question .panel-title > a:before {
+.Ask-question .panel-title > a:before {
   float: left;
   font-family: FontAwesome;
   content: "\f068";
@@ -543,55 +499,47 @@
   color: #273245;
 }
 
-.Succeed-your-business .Ask-question .panel-title > a.collapsed:before {
+.Ask-question .panel-title > a.collapsed:before {
   float: left;
   content: "\f067";
 }
 
-.Succeed-your-business .Ask-question .panel-title > a:hover,
-.Succeed-your-business .Ask-question .panel-title > a:active,
-.Succeed-your-business .Ask-question .panel-title > a:focus {
+.Ask-question .panel-title > a:hover,
+.Ask-question .panel-title > a:active,
+.Ask-question .panel-title > a:focus {
   text-decoration: none;
 }
 
-.Succeed-your-business .Ask-question .panel-title a {
+.Ask-question .panel-title a {
   color: #273245;
   font-size: 20px;
   font-weight: 400;
 }
 
-.Succeed-your-business .Ask-question .panel-body {
+.Ask-question .panel-body {
   padding-left: 45px;
   font-size: 18px;
   font-weight: 200;
 }
 
-.Succeed-your-business .started-business {
-  background-color: #0d2187;
-  color: #ffffff;
+.started-business {
   padding: 60px 0;
   text-align: center;
 }
 
-.Succeed-your-business .started-business .heading .h1-heading {
+.started-business .heading .h1-heading {
   font-family: bold-font;
 }
 
-.Succeed-your-business .started-business .heading .business-paragraph {
+.started-business .heading .business-paragraph {
   font-size: 18px;
 }
 
-.Succeed-your-business .started-business .started-buttons {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.started-business .started-buttons {
   margin-top: 20px;
 }
 
-.Succeed-your-business .started-business .started-buttons .button {
+.started-business .started-buttons .button {
   color: #ffffff;
   background-color: transparent;
   background-image: none;
@@ -603,12 +551,12 @@
   margin-right: 10px;
 }
 
-.Succeed-your-business .started-business .started-buttons .button:hover {
+.started-business .started-buttons .button:hover {
   background-color: #ffffff;
   color: #0d2187;
 }
 
-.Succeed-your-business .started-business .started-buttons .get-started-button {
+.started-business .started-buttons .get-started-button {
   background-color: #ffffff;
   color: #0d2187;
 }
@@ -664,6 +612,7 @@
   }
   .overlay-div .img-div {
     height: 475px;
+    padding: 90px 0;
   }
   .container-bg-color .business-tools {
     width: 100%;
@@ -709,13 +658,7 @@
   }
   .overlay-div .amazon-para {
     font-size: 14px;
-    color: #ffffff;
     margin: 10px 0px;
-  }
-  .started-buttons {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .Succeed-your-business .pricing .inner-pricing-div .order-list .check-li {
     padding: 7px 0 7px 18px;
@@ -761,9 +704,6 @@
   .started-business .started-buttons {
     padding: 10px 27px;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -825,7 +765,6 @@
     padding: 7px;
   }
   .Succeed-your-business .started-business .get-started-button {
-    width: 138px;
     font-size: 14px;
   }
   .Shipment-heading,
